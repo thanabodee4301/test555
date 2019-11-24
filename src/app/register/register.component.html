@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="addUser()">
+<div class="container">
+    <label for="email"><b>user name</b></label>
+    <input type="text" placeholder="Enter Email"  formControlName="firstName">
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password"  formControlName="password">
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password"  formControlName="password2">
+    <hr>
+    <button class="button" type="submit">click</button>
+</div>
+</form>
+
