@@ -1,1 +1,23 @@
-<p>home works!</p>
+<div>
+    <div class="titleHead">Website Statistics</div>
+    <div class="subtitle">1-31 October 2019</div>
+    <div class="itp-static-card-container">
+        <div class="bank" *ngFor="let item of data">
+            <div class="bank2">
+                <div>{{ item }}</div>
+                <div class="subtitle">{{ item.subtitle }}</div>
+                <img class="bank3" src="{{ item.image }}" />
+                <div class="test">{{ item.text1 }} {{ item.current }}</div>
+                <div
+                    [ngClass]="{
+                        diffPlus: item.check === true,
+                        diffMinus: item.check === false
+                    }"
+                >
+                    {{ item.diff }} %
+                </div>
+                <div class="test2">{{ item.text2 }} {{ item.compare }}</div>
+            </div>
+        </div>
+    </div>
+</div>

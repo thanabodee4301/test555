@@ -1,0 +1,44 @@
+.itp-static-card-container {
+    position: relative;
+    height: auto;
+    max-width: 1300px;
+    margin: 40px auto 90px auto;
+    display: flex;
+    justify-content: center;
+}
+.bank {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.bank2 {
+    width: 100%;
+    border-right: 5px solid red;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+.bank3 {
+    width: 100%;
+}
+.subtitle {
+    font-size: 0.8em;
+}
+.diffPlus {
+    text-align: right;
+    padding-right: 15px;
+    color: green;
+}
+.diffMinus {
+    text-align: right;
+    padding-right: 15px;
+    color: red;
+}
+.titleHead {
+    font-size: 2em;
+    text-align: center;
+    color: #32aeb8;
+}
+.subtitle {
+    text-align: center;
+}
